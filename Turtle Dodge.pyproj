@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>66a1733f-f4f0-4f0e-95ab-33b38e0e7ef3</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Turtle_Dodge.py</StartupFile>
+    <StartupFile>main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,10 +21,17 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Turtle_Dodge.py" />
+    <Compile Include="enemy\enemy.py" />
+    <Compile Include="main.py" />
+    <Compile Include="player\player.py" />
+    <Compile Include="score\score.py" />
+    <Compile Include="sound\sound.py" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="gitignore .gitignore" />
+    <Folder Include="enemy\" />
+    <Folder Include="sound\" />
+    <Folder Include="score\" />
+    <Folder Include="player\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
